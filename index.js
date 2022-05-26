@@ -25,7 +25,7 @@ const limiter = rateLimit({
 app.use(limiter);
 
 // Aqui se agregan las rutas.
-app.use('/api/register', routes);
+app.use('/register', routes);
 
 app.get('/', (req, res) => res.send('⭐'));
 
