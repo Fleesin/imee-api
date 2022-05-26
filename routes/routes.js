@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
-const User = require('../database/models/Users.model');
+const User = require('../database/models/students');
 
 router.post('/register', async (req, res) => {
   // Verificar si el correo ya existe.
@@ -29,7 +29,7 @@ router.post('/register', async (req, res) => {
     t_blood: req.body.t_blood,
     rh: req.body.rh,
     Gender: req.body.Gender,
-    
+
     fNameP: req.body.fNameP,
     lNameP: req.body.lNameP,
     idP: req.body.idP,
