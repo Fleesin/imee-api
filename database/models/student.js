@@ -5,26 +5,86 @@ const mongoose = require('mongoose');
  * Todas obligatorias, y todas aceptan un string.
  */
 const studentSchema = new mongoose.Schema({
-    fName,
-    lName,
-    tId,
-    id,
-    nationality,
-    address,
-    barrio,
-    locality,
-    phone,
-    EPS,
-    t_blood,
-    rh,
-    Gender,
-    fNameP,
-    lNameP,
-    idP,
-    emailM,
-    fNameM,
-    lNameM,
-    idM,
+    fName:{
+        type: String,
+        required: true
+    },
+    lName:{
+        type: String,
+        required: true
+    },
+    tId:{
+        type: String,
+        required: true
+    },
+    id:{
+        type: String,
+        required: true
+    },
+    nationality:{
+        type: String,
+        required: true
+    },
+    address:{
+        type: String,
+        required: true
+    },
+    barrio:{
+        type: String,
+        required: true
+    },
+    locality:{
+        type: String,
+        required: true
+    },
+    phone:{
+        type: String,
+        required: true
+    },
+    EPS:{
+        type: String,
+        required: true
+    },
+    t_blood:{
+        type: String,
+        required: true
+    },
+    rh:{
+        type: String,
+        required: true
+    },
+    Gender:{
+        type: String,
+        required: true
+    },
+    fNameP:{
+        type: String,
+        required: true
+    },
+    lNameP:{
+        type: String,
+        required: true
+    },
+    idP:{
+        type: String,
+        required: true
+    },
+    emailM:{
+        type: String,
+        required: true
+    },
+    fNameM:{
+        type: String,
+        required: true
+    },
+    lNameM:{
+        type: String,
+        required: true
+    },
+    idM:{
+        type: String,
+        required: true
+    },
     emailM:{
         type: String,
         required: true
