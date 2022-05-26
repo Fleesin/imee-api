@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
-const User = require('../database/models/students');
+const Student = require('../database/models/student');
 
 router.post('/register', async (req, res) => {
   // Verificar si el correo ya existe.
-  const emailExist = await User.findOne({ email: req.body.email });
+  const emailExist = await Student.findOne({ email: req.body.email });
   if (emailExist) return res.status(400).send({ error: 'El email existe' });
 
   // Hash password
@@ -12,7 +12,7 @@ router.post('/register', async (req, res) => {
   const hashedPassword = await bcrypt.hash(req.body.password, salt);
 
   // Crear un nuevo usuario
-  const user = new User({
+  const user = new Student({
 
     fName: req.body.fName,
     lName: req.body.lName,
@@ -29,7 +29,7 @@ router.post('/register', async (req, res) => {
     t_blood: req.body.t_blood,
     rh: req.body.rh,
     Gender: req.body.Gender,
-
+    
     fNameP: req.body.fNameP,
     lNameP: req.body.lNameP,
     idP: req.body.idP,
