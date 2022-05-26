@@ -19,7 +19,7 @@ router.post('/register', async (req, res) => {
     tId: req.body.tId,
     email: req.body.email,
     password: hashedPassword,
-    id: req.body.id,
+    /*id: req.body.id,
     nationality: req.body.nationality,
     address: req.body.address,
     barrio: req.body.barrio,
@@ -38,7 +38,7 @@ router.post('/register', async (req, res) => {
     fNameM: req.body.fNameM,
     lNameM: req.body.lNameM,
     idM: req.body.idM,
-    emailM: req.body.emailM
+    emailM: req.body.emailM*/
 
   });
 
