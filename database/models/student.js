@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
  * Se crea un esquema para un usuario. Este usuario tendra las propiedades name, email, password.
  * Todas obligatorias, y todas aceptan un string.
  */
-const studentSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     fName:{
         type: String,
         required: true
@@ -101,4 +101,4 @@ const studentSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Student', studentSchema);
+module.exports = mongoose.model('User', userSchema);
