@@ -25,7 +25,7 @@ router.post('/register', async (req, res) => {
     barrio: req.body.barrio,
     locality: req.body.locality,
     phone: req.body.phone,
-    EPS: req.body.eps,
+    eps: req.body.eps,
     t_blood: req.body.t_blood,
     rh: req.body.rh,
     Gender: req.body.Gender,
