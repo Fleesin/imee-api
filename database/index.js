@@ -10,5 +10,4 @@ module.exports.connect = async () => {
       'mongodb+srv://jeanquintana:paTIGO06XNOeOStx@imee.wdtzgoy.mongodb.net/?retryWrites=true&w=majority'
     )
     .then(() => log('Conectado a Atlas'))
-    .catch((error) => console.log(error));
 };
