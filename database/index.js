@@ -9,5 +9,9 @@ module.exports.connect = async () => {
     .connect(
       'mongodb+srv://jeanquintana:paTIGO06XNOeOStx@imee.wdtzgoy.mongodb.net/?retryWrites=true&w=majority'
     )
-    .catch((error) => console.log(error));
+    try{
+      console.log('Conectado a Atlas')
+    }catch (error) {
+      console.log(error)
+    }
 };
